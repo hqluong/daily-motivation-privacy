@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Daily Motivation Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Daily Motivation: Quotes, in English and Vietnamese / Chính sách quyền riêng tư bằng tiếng Anh và tiếng Việt.">
   <style>
     :root {
       color-scheme: light;
@@ -63,76 +64,198 @@
     a:hover {
       text-decoration: underline;
     }
+      nav.lang {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    nav.lang a {
+      border: 1px solid #cbd5e1;
+      border-radius: 999px;
+      padding: 4px 14px;
+      font-size: 14px;
+    }
+    .card + .card {
+      margin-top: 16px;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid #e2e8f0;
+      margin: 56px 0;
+    }
   </style>
 </head>
 <body>
   <main>
+    <nav class="lang" aria-label="Language / Ngôn ngữ">
+      <a href="#en" hreflang="en">English</a>
+      <a href="#vi" hreflang="vi">Tiếng Việt</a>
+    </nav>
+
+    <article id="en" lang="en">
     <header>
-      <p class="muted">Effective date: 2026-10-21</p>
+      <p class="muted">Effective date: 2026-11-09 &nbsp;•&nbsp; Policy version 2</p>
       <h1>Privacy Policy for Daily Motivation: Quotes</h1>
-      <p>Developer: Hung Luong &nbsp;•&nbsp; Contact: <a href="mailto:trample_pies_4l@icloud.com">trample_pies_4l@icloud.com</a></p>
-      <p>Daily Motivation: Quotes (“the App”) is designed to provide daily inspirational quotes and affirmations. We respect your privacy. Your favorites, notes and reflections stay on your device. The App shows ads and uses Google services to measure usage and fix crashes, as described below.</p>
+      <p>Data controller: Hung Luong (individual developer) &nbsp;•&nbsp; Contact: <a href="mailto:trample_pies_4l@icloud.com">trample_pies_4l@icloud.com</a></p>
+      <p>Daily Motivation: Quotes (“the App”) shows daily inspirational quotes and affirmations. Your favorites, notes and reflections stay on your device. The App shows ads, and with your permission uses Google services to measure usage and fix crashes. This policy explains what is collected, why, where it goes, and how to change your mind. It is written to meet Vietnam’s Personal Data Protection Law (Law No. 91/2025/QH15) and Apple’s App Store rules.</p>
     </header>
 
     <section class="card">
-      <h2>Information We Collect</h2>
-      <p>The App does not create user accounts and we do not sell personal data. The App uses the following Google services, which collect limited information automatically:</p>
+      <h2>1. Your consent comes first</h2>
+      <p>After the welcome screens, the App shows a <strong>Privacy choices</strong> screen with a separate switch for each purpose below. Every switch is <strong>off</strong> until you turn it on. Nothing is sent for a purpose you have not allowed. The App records the time of your choice and the policy version. You can change or withdraw your choices at any time in <strong>Settings &gt; Privacy choices</strong>; withdrawing does not affect processing that already happened.</p>
       <ul>
-        <li><strong>Google AdMob</strong> (ads): device and advertising identifiers (such as Apple’s IDFA, only if you allow tracking), approximate location derived from IP address, device information, and ad interactions, used to show and measure ads.</li>
-        <li><strong>Firebase Analytics</strong> (usage): app-usage events such as opening the App, viewing or saving a quote, sharing, and completing a Daily Reset, along with device information and an app instance identifier. It does not include your notes or reflections.</li>
-        <li><strong>Firebase Crashlytics</strong> (diagnostics): crash reports, including device state and stack traces, used to find and fix bugs.</li>
-        <li><strong>Firebase Remote Config</strong>: an app instance identifier used to deliver settings such as how often ads appear.</li>
+        <li><strong>Usage statistics</strong> (Google Analytics for Firebase): app events such as opening the App, viewing, saving or sharing a quote, and completing a Daily Reset, with device information (model, iOS version, language, approximate region) and an app instance identifier. Purpose: understanding which features help and improving the App.</li>
+        <li><strong>Crash reports</strong> (Firebase Crashlytics): crash logs, device state and stack traces. Purpose: finding and fixing bugs.</li>
+        <li><strong>Personalized ads</strong> (Google AdMob): lets Google use your device’s advertising identifier (IDFA, only if you also allow tracking in the iOS prompt) and ad interactions to show ads based on your interests. Purpose: personalized advertising.</li>
       </ul>
-      <p>Google processes this information under its own policies: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
+      <p>If you allow usage statistics or crash reports, Firebase Remote Config also receives the app instance identifier to deliver settings such as how often ads appear.</p>
     </section>
 
     <section class="card">
-      <h2>Your Choices</h2>
-      <ul>
-        <li><strong>Tracking:</strong> the App asks for permission before using your device’s advertising identifier. You can change this anytime in iOS Settings &gt; Privacy &amp; Security &gt; Tracking. If you decline, you still see ads, but they are less personalized.</li>
-        <li><strong>Consent (EEA, UK and Switzerland):</strong> you’re asked for consent through Google’s consent form before personalized ads are shown. You can change your choice anytime in the App under Settings &gt; Ad privacy choices.</li>
-        <li><strong>Usage and crash data:</strong> turn off “Share usage and crash data” in the App’s Settings to stop Firebase Analytics and Crashlytics collection.</li>
-      </ul>
+      <h2>2. Ads shown to everyone</h2>
+      <p>The App is free and funded by ads from Google AdMob. If you do not allow personalized ads, the App asks Google for <strong>non-personalized ads only</strong>. To deliver any ad, Google still receives basic technical data: IP address (used for approximate location), device and network information, and ad views and taps, used to show the ad, count it, and prevent fraud. The App does not ask for tracking permission unless you allowed personalized ads. Users in the EEA, UK and Switzerland also see Google’s own consent form, which they can reopen in Settings &gt; Ad privacy choices.</p>
     </section>
 
     <section class="card">
-      <h2>On-Device Data (stored locally)</h2>
-      <p>The following data is stored only on your device using system storage (UserDefaults). It is never sent to us or to any third party:</p>
+      <h2>3. Data that stays on your device</h2>
+      <p>These are stored only on your device (iOS UserDefaults) and are never sent to us or anyone else:</p>
       <ul>
-        <li>Preferences and settings (e.g., themes, fonts, backgrounds, selected categories)</li>
+        <li>Preferences and settings (themes, fonts, backgrounds, categories)</li>
         <li>Reminder times and notification preferences</li>
-        <li>Favorites (quotes you mark as favorite)</li>
-        <li>Quote notes, Daily Reset reflections, and selected small actions</li>
-        <li>Streak and engagement history</li>
-        <li>On-device category preference scores based on saved and skipped quotes</li>
+        <li>Favorites, quote notes, Daily Reset reflections and small actions</li>
+        <li>Streak and engagement history, and on-device category preference scores</li>
+        <li>Your privacy choices</li>
+      </ul>
+      <p>Reminders are local notifications scheduled on your device. No push service or device token is used. The Apple Watch app and widgets read the bundled quotes only.</p>
+    </section>
+
+    <section class="card">
+      <h2>4. Who receives data, and transfer outside Vietnam</h2>
+      <p>We do not sell personal data and we have no servers of our own. Data described in sections 1 and 2 is processed by <strong>Google LLC</strong> (and its affiliates, including Google Ireland Limited) as our processor for Firebase and as an independent provider for AdMob. Google stores and processes this data on servers <strong>outside Vietnam, mainly in the United States</strong>. Google protects it under its own terms and safeguards: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://firebase.google.com/support/privacy">Firebase privacy</a>, and <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from apps that use its services</a>. By turning on a choice, you agree to this transfer for that purpose.</p>
+    </section>
+
+    <section class="card">
+      <h2>5. How long data is kept</h2>
+      <ul>
+        <li>Usage statistics: no longer than 14 months in Google Analytics, then deleted automatically.</li>
+        <li>Crash reports: 90 days in Firebase Crashlytics.</li>
+        <li>Ad data: according to Google’s retention policy for advertising.</li>
+        <li>On-device data: until you delete it, reset it, or delete the App.</li>
       </ul>
     </section>
 
     <section class="card">
-      <h2>Notifications</h2>
-      <p>The App may schedule local notifications at times you choose. These are created and managed on your device. No device tokens or remote push services are used.</p>
+      <h2>6. Your rights</h2>
+      <p>Under Vietnamese law you have the right to: be informed about processing; give, refuse or withdraw consent; access and receive a copy of your data; correct it; delete it; restrict processing; object to processing, including for advertising; file a complaint or lawsuit; and claim compensation for damage.</p>
+      <ul>
+        <li><strong>Change or withdraw consent:</strong> Settings &gt; Privacy choices. Turning off usage statistics also clears the analytics identifier on your device.</li>
+        <li><strong>Delete data held by Google:</strong> Settings &gt; Request data deletion. This writes an email to us that includes your install’s app instance ID, so we can find and delete the data in Google Analytics and Crashlytics.</li>
+        <li><strong>Delete on-device data:</strong> Settings &gt; Reset all local data, or delete the App.</li>
+        <li><strong>Tracking:</strong> iOS Settings &gt; Privacy &amp; Security &gt; Tracking.</li>
+        <li><strong>Other requests or questions:</strong> email <a href="mailto:trample_pies_4l@icloud.com">trample_pies_4l@icloud.com</a>.</li>
+      </ul>
+      <p>We will acknowledge your request within 72 hours and complete it within the time limits set by Vietnamese law. Because the App has no accounts, we may need your app instance ID to find your data. If you are not satisfied, you can complain to Vietnam’s personal data protection authority (Department of Cybersecurity and High-Tech Crime Prevention, Ministry of Public Security).</p>
     </section>
 
     <section class="card">
-      <h2>Data Sharing</h2>
-      <p>We do not sell your data. The information described under “Information We Collect” is shared with Google (AdMob and Firebase) as service providers so the App can show ads, measure usage and fix crashes. Your on-device data is not shared.</p>
+      <h2>7. Security</h2>
+      <p>Data sent to Google is encrypted in transit. On-device data is protected by iOS. If we learn of a breach affecting your data, we will notify you and the authorities as the law requires.</p>
     </section>
 
     <section class="card">
-      <h2>Data Retention and Deletion</h2>
-      <p>On-device data remains on your device until you remove it. Information collected by Google services is kept according to Google’s retention settings.</p>
-      <p>You can remove favorites, notes, Daily Resets, streaks, preferences, and reminders by choosing “Reset all local data” in the App’s settings. This also resets the App’s analytics identifier. Deleting the App also removes its locally stored data.</p>
-    </section>
-
-    <section class="card">
-      <h2>Changes</h2>
-      <p>We may update this policy to reflect product or legal changes. We will update the “Effective date” above. Continued use after changes indicates acceptance.</p>
+      <h2>8. Changes to this policy</h2>
+      <p>If we change this policy, we will update the effective date above. If a change affects what is collected or why, the App will ask for your choices again before applying it.</p>
     </section>
 
     <section class="card" id="contact">
-      <h2>Contact</h2>
-      <p>If you have questions about this policy, contact: <a href="mailto:trample_pies_4l@icloud.com">trample_pies_4l@icloud.com</a>.</p>
+      <h2>9. Contact</h2>
+      <p>Hung Luong, developer of Daily Motivation: Quotes &nbsp;•&nbsp; <a href="mailto:trample_pies_4l@icloud.com">trample_pies_4l@icloud.com</a></p>
     </section>
+    </article>
+
+    <hr>
+
+    <article id="vi" lang="vi">
+    <header>
+      <p class="muted">Ngày hiệu lực: 09/11/2026 &nbsp;•&nbsp; Phiên bản chính sách 2</p>
+      <h1>Chính sách quyền riêng tư của Daily Motivation: Quotes</h1>
+      <p>Bên kiểm soát dữ liệu: Hung Luong (nhà phát triển cá nhân) &nbsp;•&nbsp; Liên hệ: <a href="mailto:trample_pies_4l@icloud.com">trample_pies_4l@icloud.com</a></p>
+      <p>Daily Motivation: Quotes (“Ứng dụng”) hiển thị câu trích dẫn và lời khẳng định truyền cảm hứng mỗi ngày. Mục yêu thích, ghi chú và suy ngẫm của bạn chỉ lưu trên thiết bị. Ứng dụng có hiển thị quảng cáo và, khi bạn cho phép, sử dụng dịch vụ của Google để đo lường cách dùng và sửa lỗi. Chính sách này giải thích dữ liệu nào được thu thập, vì sao, được chuyển đến đâu và cách bạn thay đổi lựa chọn. Chính sách được soạn theo Luật Bảo vệ dữ liệu cá nhân của Việt Nam (Luật số 91/2025/QH15) và quy định của App Store.</p>
+    </header>
+
+    <section class="card">
+      <h2>1. Sự đồng ý của bạn là trên hết</h2>
+      <p>Sau các màn hình chào mừng, Ứng dụng hiển thị màn hình <strong>Lựa chọn quyền riêng tư</strong> với một công tắc riêng cho từng mục đích dưới đây. Mọi công tắc đều <strong>tắt</strong> cho đến khi bạn bật. Không có dữ liệu nào được gửi cho mục đích bạn chưa cho phép. Ứng dụng ghi lại thời điểm bạn lựa chọn và phiên bản chính sách. Bạn có thể thay đổi hoặc rút lại sự đồng ý bất cứ lúc nào trong <strong>Cài đặt &gt; Privacy choices</strong>; việc rút lại không ảnh hưởng đến việc xử lý đã diễn ra trước đó.</p>
+      <ul>
+        <li><strong>Thống kê sử dụng</strong> (Google Analytics for Firebase): các sự kiện trong ứng dụng như mở Ứng dụng, xem, lưu hoặc chia sẻ câu trích dẫn, hoàn thành Daily Reset, kèm thông tin thiết bị (dòng máy, phiên bản iOS, ngôn ngữ, khu vực gần đúng) và mã định danh phiên cài đặt ứng dụng (app instance ID). Mục đích: hiểu tính năng nào hữu ích và cải thiện Ứng dụng.</li>
+        <li><strong>Báo cáo sự cố</strong> (Firebase Crashlytics): nhật ký sự cố, trạng thái thiết bị và dấu vết lỗi. Mục đích: tìm và sửa lỗi.</li>
+        <li><strong>Quảng cáo cá nhân hóa</strong> (Google AdMob): cho phép Google dùng mã định danh quảng cáo của thiết bị (IDFA, chỉ khi bạn cũng cho phép theo dõi trong hộp thoại của iOS) và tương tác với quảng cáo để hiển thị quảng cáo theo sở thích. Mục đích: quảng cáo cá nhân hóa.</li>
+      </ul>
+      <p>Nếu bạn cho phép thống kê sử dụng hoặc báo cáo sự cố, Firebase Remote Config cũng nhận mã định danh phiên cài đặt để gửi các thiết lập như tần suất hiển thị quảng cáo.</p>
+    </section>
+
+    <section class="card">
+      <h2>2. Quảng cáo hiển thị cho mọi người</h2>
+      <p>Ứng dụng miễn phí và được duy trì nhờ quảng cáo của Google AdMob. Nếu bạn không cho phép quảng cáo cá nhân hóa, Ứng dụng chỉ yêu cầu Google hiển thị <strong>quảng cáo không cá nhân hóa</strong>. Để hiển thị bất kỳ quảng cáo nào, Google vẫn nhận một số dữ liệu kỹ thuật cơ bản: địa chỉ IP (dùng để xác định vị trí gần đúng), thông tin thiết bị và mạng, lượt xem và lượt chạm quảng cáo, nhằm hiển thị, đếm quảng cáo và ngăn chặn gian lận. Ứng dụng không hỏi quyền theo dõi trừ khi bạn đã cho phép quảng cáo cá nhân hóa. Người dùng ở EEA, Vương quốc Anh và Thụy Sĩ còn thấy biểu mẫu đồng ý riêng của Google, có thể mở lại trong Cài đặt &gt; Ad privacy choices.</p>
+    </section>
+
+    <section class="card">
+      <h2>3. Dữ liệu chỉ lưu trên thiết bị</h2>
+      <p>Các dữ liệu sau chỉ được lưu trên thiết bị của bạn (iOS UserDefaults) và không bao giờ được gửi cho chúng tôi hay bất kỳ ai:</p>
+      <ul>
+        <li>Tùy chọn và cài đặt (chủ đề, phông chữ, hình nền, chủ đề trích dẫn)</li>
+        <li>Giờ nhắc nhở và tùy chọn thông báo</li>
+        <li>Mục yêu thích, ghi chú, suy ngẫm Daily Reset và các hành động nhỏ</li>
+        <li>Chuỗi ngày sử dụng, lịch sử tương tác và điểm ưu tiên chủ đề tính trên thiết bị</li>
+        <li>Các lựa chọn quyền riêng tư của bạn</li>
+      </ul>
+      <p>Lời nhắc là thông báo cục bộ được lên lịch trên thiết bị. Ứng dụng không dùng dịch vụ thông báo đẩy hay mã thiết bị. Ứng dụng Apple Watch và tiện ích (widget) chỉ đọc các câu trích dẫn có sẵn.</p>
+    </section>
+
+    <section class="card">
+      <h2>4. Bên nhận dữ liệu và chuyển dữ liệu ra nước ngoài</h2>
+      <p>Chúng tôi không bán dữ liệu cá nhân và không có máy chủ riêng. Dữ liệu nêu tại mục 1 và 2 được xử lý bởi <strong>Google LLC</strong> (và các công ty liên kết, bao gồm Google Ireland Limited), với vai trò bên xử lý dữ liệu cho Firebase và nhà cung cấp độc lập cho AdMob. Google lưu trữ và xử lý dữ liệu này trên máy chủ <strong>ngoài lãnh thổ Việt Nam, chủ yếu tại Hoa Kỳ</strong>. Google bảo vệ dữ liệu theo điều khoản và biện pháp của mình: <a href="https://policies.google.com/privacy?hl=vi">Chính sách quyền riêng tư của Google</a>, <a href="https://firebase.google.com/support/privacy">Quyền riêng tư của Firebase</a>, và <a href="https://policies.google.com/technologies/partner-sites?hl=vi">cách Google sử dụng dữ liệu từ ứng dụng dùng dịch vụ của Google</a>. Khi bật một lựa chọn, bạn đồng ý với việc chuyển dữ liệu này cho mục đích đó.</p>
+    </section>
+
+    <section class="card">
+      <h2>5. Thời gian lưu trữ</h2>
+      <ul>
+        <li>Thống kê sử dụng: tối đa 14 tháng trong Google Analytics, sau đó tự động xóa.</li>
+        <li>Báo cáo sự cố: 90 ngày trong Firebase Crashlytics.</li>
+        <li>Dữ liệu quảng cáo: theo chính sách lưu trữ quảng cáo của Google.</li>
+        <li>Dữ liệu trên thiết bị: cho đến khi bạn xóa, đặt lại hoặc gỡ Ứng dụng.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>6. Quyền của bạn</h2>
+      <p>Theo pháp luật Việt Nam, bạn có quyền: được biết về việc xử lý dữ liệu; đồng ý, không đồng ý hoặc rút lại sự đồng ý; truy cập và nhận bản sao dữ liệu; chỉnh sửa; xóa; hạn chế xử lý; phản đối việc xử lý, kể cả cho mục đích quảng cáo; khiếu nại, khởi kiện; và yêu cầu bồi thường thiệt hại.</p>
+      <ul>
+        <li><strong>Thay đổi hoặc rút lại sự đồng ý:</strong> Cài đặt &gt; Privacy choices. Tắt thống kê sử dụng cũng xóa mã định danh phân tích trên thiết bị.</li>
+        <li><strong>Xóa dữ liệu do Google lưu giữ:</strong> Cài đặt &gt; Request data deletion. Ứng dụng soạn sẵn email gửi chúng tôi kèm app instance ID của bản cài đặt, để chúng tôi tìm và xóa dữ liệu trong Google Analytics và Crashlytics.</li>
+        <li><strong>Xóa dữ liệu trên thiết bị:</strong> Cài đặt &gt; Reset all local data, hoặc gỡ Ứng dụng.</li>
+        <li><strong>Theo dõi:</strong> Cài đặt iOS &gt; Quyền riêng tư &amp; Bảo mật &gt; Theo dõi.</li>
+        <li><strong>Yêu cầu hoặc câu hỏi khác:</strong> email <a href="mailto:trample_pies_4l@icloud.com">trample_pies_4l@icloud.com</a>.</li>
+      </ul>
+      <p>Chúng tôi sẽ xác nhận yêu cầu của bạn trong vòng 72 giờ và hoàn tất trong thời hạn pháp luật Việt Nam quy định. Vì Ứng dụng không có tài khoản, chúng tôi có thể cần app instance ID để tìm dữ liệu của bạn. Nếu chưa hài lòng, bạn có thể khiếu nại đến cơ quan chuyên trách bảo vệ dữ liệu cá nhân (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao, Bộ Công an).</p>
+    </section>
+
+    <section class="card">
+      <h2>7. Bảo mật</h2>
+      <p>Dữ liệu gửi đến Google được mã hóa khi truyền. Dữ liệu trên thiết bị được iOS bảo vệ. Nếu phát hiện sự cố ảnh hưởng đến dữ liệu của bạn, chúng tôi sẽ thông báo cho bạn và cơ quan có thẩm quyền theo quy định pháp luật.</p>
+    </section>
+
+    <section class="card">
+      <h2>8. Thay đổi chính sách</h2>
+      <p>Khi thay đổi chính sách này, chúng tôi sẽ cập nhật ngày hiệu lực ở trên. Nếu thay đổi ảnh hưởng đến dữ liệu được thu thập hoặc mục đích thu thập, Ứng dụng sẽ hỏi lại lựa chọn của bạn trước khi áp dụng.</p>
+    </section>
+
+    <section class="card">
+      <h2>9. Liên hệ</h2>
+      <p>Hung Luong, nhà phát triển Daily Motivation: Quotes &nbsp;•&nbsp; <a href="mailto:trample_pies_4l@icloud.com">trample_pies_4l@icloud.com</a></p>
+      <p class="muted">Nếu có khác biệt giữa bản tiếng Anh và bản tiếng Việt, bản tiếng Việt được ưu tiên áp dụng đối với người dùng tại Việt Nam.</p>
+    </section>
+    </article>
   </main>
 </body>
 </html>
